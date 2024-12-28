@@ -4,7 +4,7 @@
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 10px;
   background-image: url(sky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,6 +27,15 @@ textarea {
 }
 
 /* typography */
+.jumbotron {
+  background: rgba(255,255,255,0.5);
+}
+
+.btn {
+  background: rgba(255,255,255,0.5);
+  color: black;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
@@ -58,11 +67,22 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
+  font-size: 2.5em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+#menu {
+  float: left;
+  margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
+  padding-top: 20px;
   font-weight: bold;
 }
 
@@ -71,7 +91,38 @@ p {
   text-decoration: none;
 }
 
-.logo {
+.hd {
   display: block;
   margin: auto;
+}
+
+/* footer */
+
+footer {
+  margin-top: 200px;
+  padding-top: 10px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
 }
