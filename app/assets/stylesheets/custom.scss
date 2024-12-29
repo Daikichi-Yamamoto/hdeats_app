@@ -73,6 +73,10 @@ p {
   letter-spacing: -1px;
   padding-top: 20px;
   font-weight: bold;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 #menu {
@@ -86,10 +90,6 @@ p {
   font-weight: bold;
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 .hd {
   display: block;
@@ -103,26 +103,21 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #eaeaea;
   color: #777;
-}
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+  }
+  ul li {
+    float: left;
+    margin-left: 15px;
+  }
 }
