@@ -24,5 +24,5 @@ production:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['postgresql://hdeats_app_production_user:EbcD9FwEcM05pUhjSyYa5XSTAZSRwieV@dpg-ctsglp52ng1s73c0vvmg-a/hdeats_app_production'] %>
 
