@@ -90,7 +90,7 @@ p {
   }
 }
 
-#menu {
+#menu,#account {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
@@ -199,4 +199,10 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
 }
