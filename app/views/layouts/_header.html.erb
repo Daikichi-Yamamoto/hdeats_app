@@ -3,26 +3,26 @@
   <%= link_to "HDeats", root_path, id: "logo" %>
   <nav>
     <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "Home",   root_path, id: "menu"%></li>
-      <li><%= link_to "Help",   help_path, id: "menu"%></li>
+      <li><%= link_to "ホーム",   root_path, id: "menu"%></li>
+      <li><%= link_to "困った時",   help_path, id: "menu"%></li>
       <% if logged_in? %>
-        <li><%= link_to "Users", '#' ,id: "menu"%></li>
+        <li><%= link_to "みんなの食事", users_path ,id: "menu"%></li>
         <li class="dropdown">
           <a href="#" id="account" class="dropdown-toggle",id: "menu">
-            Account <b class="caret"></b>
+            アカウント <b class="caret"></b>
           </a>
           <ul id="dropdown-menu" class="dropdown-menu">
-            <li><%= link_to "Profile", current_user %></li>
-            <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+            <li><%= link_to "プロフィール", current_user %></li>
+            <li><%= link_to "設定", edit_user_path(current_user) %></li>
             <li class="divider"></li>
             <li>
-              <%= link_to "Log out", logout_path,
+              <%= link_to "ログアウト", logout_path,
                                     data: { "turbo-method": :delete } %>
             </li>
           </ul>
         </li>
       <% else %>
-        <li><%= link_to "Log in", login_path, id: "menu"%></li>
+        <li><%= link_to "ログイン", login_path, id: "menu"%></li>
       <% end %>
     </ul>
   </nav>
