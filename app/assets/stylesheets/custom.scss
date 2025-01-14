@@ -100,6 +100,20 @@ p {
   padding-top: 20px;
   font-weight: bold;
 }
+/* モバイルデバイス向けのスタイル */
+@media (max-width: 500px){
+  #logo{
+    font-size: 1.5em;
+  }
+  #account{
+    padding-left: 260px;
+  }
+  #menu,#account {
+    font-size: 1.2em;
+    padding-right: 1px;
+    margin: 0px;
+  }
+}
 
 /* footer */
 

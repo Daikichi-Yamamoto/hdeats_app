@@ -44,7 +44,7 @@ class UsersController < ApplicationController
 
   def destroy
     User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    flash[:success] = "アカウントを削除しました"
     redirect_to users_url, status: :see_other
   end
 
