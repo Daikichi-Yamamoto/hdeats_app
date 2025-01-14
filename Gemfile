@@ -4,6 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.6"
 
 gem "rails",           "7.0.4.3"
+gem 'rails-i18n', '~> 7.0'
 gem "image_processing",           "1.12.2"
 gem "active_storage_validations", "0.9.8"
 gem "bcrypt",          "3.1.18"
@@ -47,6 +48,3 @@ end
 group :production do
   gem "pg", "1.3.5"
 end
-
-# Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
-# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]

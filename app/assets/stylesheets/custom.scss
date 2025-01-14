@@ -216,6 +216,7 @@ input {
 /* Users index */
 
 .users {
+  font-size: 2.0em;
   list-style: none;
   margin: 0;
   li {
@@ -225,11 +226,35 @@ input {
   }
 }
 
+/* will paginate */
+
+.pagination {
+  font-size: 18px;
+
+  a,
+  span {
+    padding: 10px 15px;
+    margin: 0 5px;
+  }
+
+  .next,
+  .previous {
+    font-weight: bold; /* 前後リンクを太字に */
+  }
+
+  a:hover,
+  .active {
+    background-color: #007bff; /* ホバー時の背景色 */
+    color: white; /* ホバー時の文字色 */
+  }
+}
+
 /* microposts */
 
 .microposts {
   list-style: none;
   padding: 0;
+  font-size: 1.5em;
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -251,11 +276,6 @@ input {
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
-  }
 }
 
 aside {
@@ -271,3 +291,10 @@ span.image {
     border: 0;
   }
 }
+
+/* show */
+.user_info {
+    h1{
+      font-size: 2.5em;
+    }
+  }
