@@ -90,14 +90,12 @@ p {
   }
 }
 
-#menu,#account {
+.menu, #account {
   float: left;
-  margin-right: 10px;
   font-size: 1.7em;
   color: black;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 20px;
   font-weight: bold;
 }
 /* モバイルデバイス向けのスタイル */
@@ -105,13 +103,10 @@ p {
   #logo{
     font-size: 1.5em;
   }
-  #account{
-    padding-left: 260px;
-  }
-  #menu,#account {
-    font-size: 1.2em;
-    padding-right: 1px;
-    margin: 0px;
+
+  .menu, #account {
+    font-size: 1.0em;
+    padding: 10px 10px !important;
   }
 }
 
@@ -292,23 +287,3 @@ input {
   }
 }
 
-aside {
-  textarea {
-    height: 100px;
-    margin-bottom: 5px;
-  }
-}
-
-span.image {
-  margin-top: 10px;
-  input {
-    border: 0;
-  }
-}
-
-/* show */
-.user_info {
-    h1{
-      font-size: 2.5em;
-    }
-  }

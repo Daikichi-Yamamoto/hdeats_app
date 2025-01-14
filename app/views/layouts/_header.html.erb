@@ -3,12 +3,11 @@
   <%= link_to "HDeats", root_path, id: "logo" %>
   <nav>
     <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to "ホーム",   root_path, id: "menu"%></li>
-      <li><%= link_to "困った時",   help_path, id: "menu"%></li>
+      <li><%= link_to "ホーム", root_path, class: "menu" %></li>
       <% if logged_in? %>
-        <li><%= link_to "みんなの食事", users_path ,id: "menu"%></li>
+        <li><%= link_to "みんなの食事", users_path, class: "menu" %></li>
         <li class="dropdown">
-          <a href="#" id="account" class="dropdown-toggle",>
+          <a href="#" id="account" class="dropdown-toggle">
             アカウント <b class="caret"></b>
           </a>
           <ul id="dropdown-menu" class="dropdown-menu">
