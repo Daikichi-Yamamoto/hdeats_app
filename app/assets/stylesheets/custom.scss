@@ -223,6 +223,9 @@ input {
 }
 
 /* Users index */
+ul.users {
+  padding: 0px;
+}
 
 .users {
   font-size: 2.0em;
@@ -274,7 +277,6 @@ input {
   }
   .content {
     display: block;
-    margin-left: 60px;
     img {
       display: block;
       padding: 5px 0;
@@ -283,7 +285,6 @@ input {
   .timestamp {
     color: $gray-light;
     display: block;
-    margin-left: 60px;
   }
 }
 

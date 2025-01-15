@@ -1,7 +1,7 @@
 <%= form_with(model: @micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "今日の食事を記録してください！！" %>
+    <%= f.text_area :content, placeholder: "今日の食事を記録してください！！", style: "height: 150px;" %>
   </div>
   <%= f.submit "食事を記録", class: "btn btn-primary" %>
   <span class="image">
