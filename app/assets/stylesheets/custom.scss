@@ -90,16 +90,25 @@ p {
   }
 }
 
+nav ul {
+  display: flex;
+  justify-content: flex-end; /* メニューを右寄せ */
+  align-items: center; /* メニュー項目を縦中央に揃える */
+  padding: 0;
+  margin: 0;
+}
+
 .menu, #account {
-  float: left;
   font-size: 1.7em;
   color: black;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+  padding: 10px 15px; /* 余白を調整 */
 }
+
 /* モバイルデバイス向けのスタイル */
-@media (max-width: 500px){
+@media (max-width: 600px){
   #logo{
     font-size: 1.5em;
   }
