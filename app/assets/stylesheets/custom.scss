@@ -75,6 +75,9 @@ p {
 }
 
 /* header */
+header.navbar {
+  align-items: center;
+}
 
 #logo {
   float: left;
@@ -83,7 +86,6 @@ p {
   color: black;
   text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 20px;
   font-weight: bold;
   &:hover {
     color: #777;
