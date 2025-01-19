@@ -1,7 +1,8 @@
-<li>
-  <%= link_to user.name, user %>
+<!-- _user.html.erb -->
+<li class="text-reset text-start">
+  <%= link_to user.name, user, class: "text-reset fw-bold text-decoration-none" %>
   <% if current_user.admin? && !current_user?(user) %>
-    | <%= link_to "削除", user, data: { "turbo-method": :delete,
-                                          turbo_confirm: "You sure?" } %>
+    | <%= link_to "削除", user, data: { turbo_method: :delete, turbo_confirm: "本当に削除しますか?" }, class: "text-danger" %>
   <% end %>
 </li>
+

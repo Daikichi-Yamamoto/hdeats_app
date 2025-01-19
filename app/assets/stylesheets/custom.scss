@@ -16,6 +16,14 @@ body {
   padding-top: 10px;
 }
 
+.row {
+  margin-top: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
 section {
   overflow: auto;
 }
@@ -35,6 +43,7 @@ textarea {
 .hd {
   display: block;
   margin: auto;
+  padding-top: 10px;
 }
 
 /* typography */
@@ -50,17 +59,19 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  padding-top: 10px;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 1.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -76,14 +87,29 @@ p {
 /* header */
 
 /* スマホサイズ以下の時のみ文字サイズを小さくする */
-@media (max-width: 576px) {
-  .navbar .nav-link {
-    font-size: 0.575rem;
+@media (max-width: 765px) {
+  .navbar-brand {
+    font-size: 1.2rem !important; /* ロゴの文字サイズを調整 */
   }
 
-  .navbar-brand {
-    font-size: 0.95rem;
+  .nav-link {
+    font-size: 0.7rem !important; /* ナビゲーションメニューの文字サイズを調整 */
   }
+
+  .dropdown-toggle {
+    font-size: 0.7rem !important; /* ドロップダウンメニューの文字サイズを調整 */
+  }
+
+  .dropdown-item {
+    font-size: 0.9rem !important; /* ドロップダウンメニューアイテムの文字サイズを調整 */
+  }
+
+  .dropdown-menu {
+    max-width: 90vw; /* 画面の90%の幅に制限 */
+    left: 50%; /* 中央揃え */
+    transform: translateX(-50%); /* 完全に中央に配置 */
+  }
+
 }
 
 /* footer */
@@ -205,6 +231,9 @@ ul.users {
   font-size: 2.0em;
   list-style: none;
   margin: 0;
+  li:hover {
+    background-color: #bbb;
+  }
   li {
     overflow: auto;
     padding: 10px 0;
@@ -215,23 +244,26 @@ ul.users {
 
 .pagination {
   font-size: 18px;
+  font-weight: bold;
 
-  a,
-  span {
-    padding: 10px 15px;
-    margin: 0 5px;
-  }
+  a,span {
+      padding: 5px 15px;
+      margin: 0 5px;
+      color: black;
+      text-decoration: none;
+    }
 
-  .next,
-  .previous {
-    font-weight: bold; /* 前後リンクを太字に */
+  a:hover, .active {
+      background-color: #bbb; /* ホバー時の背景色 */
   }
+}
 
-  a:hover,
-  .active {
-    background-color: #007bff; /* ホバー時の背景色 */
-    color: white; /* ホバー時の文字色 */
-  }
+@media (max-width: 420px) {
+  .pagination {
+    font-size: 14px; /* フォントサイズを小さくする */
+    padding: 0px; /* 左右のパディングを少し減らす */
+    white-space: nowrap; /* 改行させない */
+    }
 }
 
 /* microposts */

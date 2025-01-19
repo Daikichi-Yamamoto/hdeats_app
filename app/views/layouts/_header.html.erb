@@ -1,32 +1,32 @@
 <header class="navbar navbar-light bg-light navbar-expand">
   <div class="container d-flex justify-content-between align-items-center">
     <!-- ロゴ -->
-    <a href="/" class="fs-1 navbar-brand">HDeats</a>
+    <a href="/" class="fs-1 fw-bold navbar-brand">HDeats</a>
 
     <!-- ナビゲーションメニュー -->
     <nav>
       <ul class="nav d-flex align-items-center flex-nowrap">
         <li class="nav-item">
-          <a href="/" class="nav-link">ホーム</a>
+          <a href="/" class="fs-3 nav-link  fw-bold text-reset">ホーム</a>
         </li>
         <% if logged_in? %>
           <li class="nav-item">
-            <%= link_to "みんなの食事", users_path, class: "nav-link" %>
+            <a href="<%= users_path %>" class="fs-3 nav-link text-reset fw-bold">みんなの食事</a>
           </li>
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="fs-3 nav-link fw-bold text-reset dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
               アカウント
             </a>
             <ul class="dropdown-menu">
-              <li class="dropdown-item"><%= link_to "プロフィール", current_user %></li>
-              <li class="dropdown-item"><%= link_to "設定", edit_user_path(current_user) %></li>
+              <li class="dropdown-item"><a href="<%= user_path(current_user) %>" class="nav-link text-reset fw-bold">プロフィール</a></li>
+              <li class="dropdown-item"><a href="<%= edit_user_path(current_user) %>" class="nav-link text-reset fw-bold">設定</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li class="dropdown-item"><%= link_to "ログアウト", logout_path, data: { "turbo-method": :delete } %></li>
+              <li class="dropdown-item"><%= link_to "ログアウト", logout_path, method: :delete, data: { turbo_method: :delete }, class: "nav-link text-reset fw-bold" %></li>
             </ul>
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "ログイン", login_path, class: "nav-link" %>
+            <a href="<%= login_path %>" class="fs-3 nav-link text-reset fw-bold">ログイン</a>
           </li>
         <% end %>
       </ul>

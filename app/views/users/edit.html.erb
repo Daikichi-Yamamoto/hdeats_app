@@ -1,8 +1,8 @@
 <% provide(:title, "Edit user") %>
 <h1>プロフィール情報の変更</h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div class="row d-flex justify-content-center">
+  <div class="col-md-6 col-md-offset-3 fw-bold">
     <%= form_with(model: @user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 

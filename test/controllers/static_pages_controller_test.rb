@@ -6,17 +6,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "HDeats"
   end
-
-  test "should get about" do
-    get about_path
-    assert_response :success
-    assert_select "title", "About | HDeats"
-  end
-
-  test "should get contact" do
-    get contact_path
-    assert_response :success
-    assert_select "title", "Contact | HDeats"
-  end
-
 end

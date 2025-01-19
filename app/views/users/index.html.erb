@@ -1,10 +1,10 @@
 <% provide(:title, 'みんなの食事') %>
 <h1>みんなの食事</h1>
 
-<%= will_paginate previous_label: '&lt 前へ', next_label: '次へ &gt' %>
+<%= will_paginate previous_label: '&lt; 前へ', next_label: '次へ &gt;', class: "pagination"%>
 
-<ul class="users">
+<ul class="users list-unstyled">
   <%= render @users %>
 </ul>
 
-<%= will_paginate previous_label: '&lt 前へ', next_label: '次へ &gt' %>
+<%= will_paginate previous_label: '&lt; 前へ', next_label: '次へ &gt;', class: "pagination"%>
