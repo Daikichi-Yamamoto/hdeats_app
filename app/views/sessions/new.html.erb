@@ -5,17 +5,19 @@
   <div class="col-md-6 col-md-offset-3 fw-bold">
     <%= form_with(url: login_path, scope: :session) do |f| %>
 
-      <%= f.label :メールアドレス %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <!-- メールアドレス入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :email, "メールアドレス" %>
+        <%= f.email_field :email, class: 'form-control' %>
+      </div>
 
-      <%= f.label :パスワード %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <!-- パスワード入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :password, "パスワード" %>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
 
-      <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <span>アカウントを記録する</span>
-      <% end %>
-
+      <!-- ログインボタン -->
       <%= f.submit "ログイン", class: "btn btn-primary" %>
     <% end %>
 

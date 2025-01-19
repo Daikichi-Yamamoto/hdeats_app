@@ -6,19 +6,34 @@
     <%= form_with(model: @user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
-      <%= f.label :名前 %>
-      <%= f.text_field :name, class: 'form-control' %>
+      <!-- 名前入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :name, "名前" %>
+        <%= f.text_field :name, class: 'form-control' %>
+      </div>
 
-      <%= f.label :メールアドレス %>
-      <%= f.email_field :email, class: 'form-control' %>
+      <!-- メールアドレス入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :email, "メールアドレス" %>
+        <%= f.email_field :email, class: 'form-control' %>
+      </div>
 
-      <%= f.label :パスワード %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <!-- パスワード入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :password, "パスワード" %>
+        <%= f.password_field :password, class: 'form-control' %>
+      </div>
 
-      <%= f.label :password_confirmation, "パスワード確認" %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
+      <!-- パスワード確認入力フィールド -->
+      <div class="mb-3">
+        <%= f.label :password_confirmation, "パスワード確認" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+      </div>
 
-      <%= f.submit "アカウント作成", class: "btn btn-primary" %>
+      <!-- 送信ボタン -->
+      <div class="mb-3">
+        <%= f.submit "アカウント作成", class: "btn btn-primary w-100" %>
+      </div>
     <% end %>
   </div>
 </div>
