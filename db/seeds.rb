@@ -1,8 +1,8 @@
 # メインのサンプルユーザーを1人作成する
-User.create!(name:  "yamamoto daikichi",
-             email: "y.daikichi905@gmail.com",
-             password:              "tyura0722",
-             password_confirmation: "tyura0722",
+User.create!(name:  "透析 太郎",
+             email: "touseki@hd.com",
+             password:              "touseki",
+             password_confirmation: "touseki",
              admin: true)
 
 # 追加のユーザーをまとめて生成する
