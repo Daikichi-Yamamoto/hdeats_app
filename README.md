@@ -1,24 +1,23 @@
-# README
+# HDeats
+透析患者さまの食事記録アプリです。<br >
+食事の写真やコメントを投稿し、患者さま間で共有できます。<br >
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# URL
+https://hdeats-app.onrender.com<br >
 
-Things you may want to cover:
+# 使用技術
+- Ruby 3.2.6
+- Ruby on Rails 7.0.4.3
 
-* Ruby version
+# 機能一覧
+- ユーザー登録、ログイン機能
+- 投稿機能
+  - 画像投稿
+- ページネーション機能
+- ユーザー投稿閲覧機能
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# テスト
+- RSpec
+  - 単体テスト(model)
+  - 機能テスト(request)
+  - 統合テスト(feature)
