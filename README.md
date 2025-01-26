@@ -1,6 +1,9 @@
 # HDeats
 透析患者さまの食事記録アプリです。<br >
 食事の写真やコメントを投稿し、患者さま間で共有できます。<br >
+ <img width="1400" alt="スクリーンショット 2025-01-26 0 06 18" src="https://github.com/Daikichi-Yamamoto/hdeats_app/issues/1#issue-2811360737">
+ <img width="350" height="700" src= "https://user-images.githubusercontent.com/60876388/81476543-643bd000-924d-11ea-9d26-cac305ca9f91.jpeg">
+
 
 # URL
 https://hdeats-app.onrender.com<br >
