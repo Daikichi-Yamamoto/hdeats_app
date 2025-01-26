@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -85,31 +85,32 @@ p {
 }
 
 /* header */
+.br-sp {
+  display: none;
+}
 
 /* スマホサイズ以下の時のみ文字サイズを小さくする */
 @media (max-width: 765px) {
   .navbar-brand {
     font-size: 1.2rem !important; /* ロゴの文字サイズを調整 */
   }
-
   .nav-link {
     font-size: 0.7rem !important; /* ナビゲーションメニューの文字サイズを調整 */
   }
-
   .dropdown-toggle {
     font-size: 0.7rem !important; /* ドロップダウンメニューの文字サイズを調整 */
   }
-
   .dropdown-item {
     font-size: 0.9rem !important; /* ドロップダウンメニューアイテムの文字サイズを調整 */
   }
-
   .dropdown-menu {
     max-width: 90vw; /* 画面の90%の幅に制限 */
     left: 50%; /* 中央揃え */
     transform: translateX(-50%); /* 完全に中央に配置 */
   }
-
+  .br-sp {
+    display: block;
+  }
 }
 
 /* footer */
